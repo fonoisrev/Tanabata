@@ -14,3 +14,8 @@
 请使用Google Chrome浏览器！
 
 没有手机版！
+
+## 参考
+
+本代码大部分css样式来自于
+https://github.com/IcedSoul/tiny-heart

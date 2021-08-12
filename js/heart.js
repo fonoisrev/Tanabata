@@ -3,7 +3,7 @@ var M = Math, n = M.pow, i, E = 4, F = "rgba(233,61,109,", d = M.cos, z = M.sin,
 var r = function () {
     return M.random() * 2 - 1
 }
-var y = "px Arial", v = "Me", q = "♥", X = w / 2, Y = h / 2, T = 4
+var y = "px Arial", v = "♥", q = "♥", X = w / 2, Y = h / 2, T = 4
 var p = function () {
     var e = this;
     e.g = function () {
@@ -50,15 +50,20 @@ setInterval(function () {
             d()
         }
     }
-    a.font = 30 + y;
     if (E > 0.1) {
-        if (E < 1) {
+        if (E < 2) {
+            a.font = 35 + y;
             a.fillStyle = F + E + ")";
-            a.fillText("双击继续", w / 2, h / 2.5)
+            a.fillText("七夕 ~ 回忆", w / 2, h / 2.8)
+        }
+        if (E < 1) {
+            a.font = 25 + y;
+            a.fillText("故事纯属虚构", w / 2, h / 2.5)
+            a.fillText("双击继续", w / 2, h / 2.3)
         }
         E -= 0.02
     }
-    a.font = 80 + y;
+    a.font = 50 + y;
     a.fillStyle = "#E93D6D";
     a.fillText(v, X, Y + u);
     a.strokeText(v, X, Y + u)
