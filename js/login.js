@@ -2,13 +2,14 @@ $('#login-button').click(function (event) {
 	var userName=document.getElementById("userName").value;
     var pwd=document.getElementById("pwd").value;
 		//修改密码请改此处
-    if(userName=="王美丽" &&  pwd=="123456"){
+    // if(userName=="王美丽" &&  pwd=="123456"){
+    if(pwd=="1"){
 			event.preventDefault();
 			$('form').fadeOut(500);
 			$('.wrapper').addClass('form-success');
 			requestFullScreen();
 			setTimeout(function(){
-				location.href="cake.html";
+				location.href="heart.html";
 			},2000);
 		}
 	else{
